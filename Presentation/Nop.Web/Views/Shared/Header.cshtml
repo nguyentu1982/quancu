@@ -3,6 +3,8 @@
     <div class="header-logo">
         <a href="@Url.RouteUrl("HomePage")" class="logo">&nbsp; </a>
     </div>
+
+    @* disable currency selector, language selector
     <div class="header-links-wrapper">
         @Html.Action("HeaderLinks", "Common")
         @Html.Action("FlyoutShoppingCart", "ShoppingCart")
@@ -11,6 +13,8 @@
         @Html.Action("SearchBox", "Catalog")
     </div>
     <div class="header-selectors-wrapper">
+        
+        
         <div class="tax-display-type-selector">
             @Html.Action("TaxTypeSelector", "Common")
         </div>
@@ -20,6 +24,9 @@
         <div class="language-selector">
             @Html.Action("LanguageSelector", "Common")
         </div>
+
+
         @Html.Widget("header_selectors")
     </div>
+    *@
 </div>
